@@ -1,0 +1,36 @@
+.spotify-window {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border: 2px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* draggable bar */
+.spotify-header {
+  height: 32px;
+  background: #1db954;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-weight: bold;
+  cursor: move;
+}
+
+.spotify-header button {
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+/* iframe container */
+.spotify-content {
+  flex: 1;
+  padding: 8px;
+}

@@ -1,0 +1,34 @@
+.resume-window {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #000;
+  box-shadow: 6px 6px 0 #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-header {
+  height: 32px;
+  background: #1f1f1f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: move;
+  font-weight: bold;
+}
+
+.resume-header button {
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.resume-content {
+  flex: 1;
+  background: #ccc;
+}

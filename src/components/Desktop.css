@@ -1,0 +1,26 @@
+
+.icons{
+    padding: 2rem;
+}
+.spotify-icon{
+    cursor: pointer;
+    img{
+        height: 3rem;
+    }
+    p{
+        font-size: 1rem;
+        color: black;
+    }
+}
+.resume-icon{
+    cursor: pointer;
+    margin-top: 1rem;
+    img{
+        height: 3rem;
+    }
+    p{
+        font-size: 1rem;
+        color: black;
+        
+    }
+}
