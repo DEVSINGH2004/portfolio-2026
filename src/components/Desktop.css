@@ -1,26 +1,28 @@
+.icons {
+  position: absolute;
+  top: 1.25rem;   /* 20px */
+  left: 1.25rem;  /* 20px */
+  
+}
 
-.icons{
-    padding: 2rem;
+.desktop-icon {
+  width: 5rem;    /* 80px */
+  height: 5.625rem; /* 90px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
-.spotify-icon{
-    cursor: pointer;
-    img{
-        height: 3rem;
-    }
-    p{
-        font-size: 1rem;
-        color: black;
-    }
+
+.desktop-icon img {
+  width: 3rem;    /* 48px */
+  pointer-events: none;
 }
-.resume-icon{
-    cursor: pointer;
-    margin-top: 1rem;
-    img{
-        height: 3rem;
-    }
-    p{
-        font-size: 1rem;
-        color: black;
-        
-    }
+
+.desktop-icon p {
+  font-size: 0.75rem; /* 12px */
+  color: white;
+  text-align: center;
+  pointer-events: none;
 }

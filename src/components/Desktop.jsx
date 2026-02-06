@@ -9,15 +9,30 @@ const Desktop = () => {
   return (
     <>
     <div className="icons">
-        <div className="spotify-icon" onClick={() => setspotifyOpen(true)}>
-            <img src="/icons/spotify-128.png" alt="" />
-            <p>Spotify</p>
-        </div>
-        <div className="resume-icon" onClick={() => setresumeOpen(true)}>
-            <img src="/icons/resume.png" alt="" />
-            <p>Resume.pdf</p>
-        </div>
-    </div>
+  {/* Spotify Icon */}
+  <div
+    className="desktop-icon"
+    onDoubleClick={(e) => {
+      e.stopPropagation()
+      setspotifyOpen(true)
+    }}
+  >
+    <img src="/icons/spotify-128.png" alt="Spotify" />
+    <p>Spotify</p>
+  </div>
+
+  {/* Resume Icon */}
+  <div
+    className="desktop-icon"
+    onDoubleClick={(e) => {
+      e.stopPropagation()
+      setresumeOpen(true)
+    }}
+  >
+    <img src="/icons/resume.png" alt="Resume" />
+    <p>Resume.pdf</p>
+  </div>
+</div>
     {spotifyOpen && <Spotify onClose={() => setspotifyOpen(false)} />}
     {resumeOpen && <Resume onClose={() => setresumeOpen(false)} />}
     </>
