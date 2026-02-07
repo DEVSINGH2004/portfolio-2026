@@ -29,7 +29,7 @@
 .desktop-icon img {
   width: 3rem;    /* 48px */
   pointer-events: none;
-  cursor: url('/public/cursors/harrow.cur'), pointer;
+  cursor: url('/cursors/harrow.cur'), pointer;
 }
 
 .desktop-icon p {

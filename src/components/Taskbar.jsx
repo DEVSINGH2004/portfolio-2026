@@ -1,7 +1,26 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import "./Taskbar.css"
 
 const Taskbar = () => {
+  const [time, setTime] = useState("")
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date()
+      const formattedTime = now.toLocaleTimeString([], {
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true,
+      })
+      setTime(formattedTime)
+    }
+
+    updateTime() // initial call
+    const interval = setInterval(updateTime, 30000) // update every 30s
+
+    return () => clearInterval(interval) // cleanup
+  }, [])
+
   return (
     <div className="xp-taskbar">
       {/* Start Button */}
@@ -10,14 +29,12 @@ const Taskbar = () => {
         <span>Start</span>
       </div>
 
-      {/* Task buttons area (empty for now) */}
-      <div className="taskbar-center">
-        {/* future app buttons */}
-      </div>
+      {/* Center (future task buttons) */}
+      <div className="taskbar-center" />
 
-      {/* System tray */}
+      {/* System Tray */}
       <div className="taskbar-tray">
-        <span className="clock">5:30 PM</span>
+        <span className="clock">{time}</span>
       </div>
     </div>
   )
