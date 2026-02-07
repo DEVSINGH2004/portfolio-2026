@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./Desktop.css"
 import Spotify from './windows/Spotify';
 import Resume from './windows/Resume';
+import { playClick } from '../utils/sound';
 
 const Desktop = () => {
     const [spotifyOpen, setspotifyOpen] = useState(false);
@@ -12,6 +13,7 @@ const Desktop = () => {
   {/* Spotify Icon */}
   <div
     className="desktop-icon"
+    onMouseDown={playClick}
     onDoubleClick={(e) => {
       e.stopPropagation()
       setspotifyOpen(true)
@@ -24,6 +26,7 @@ const Desktop = () => {
   {/* Resume Icon */}
   <div
     className="desktop-icon"
+    onMouseDown={playClick}
     onDoubleClick={(e) => {
       e.stopPropagation()
       setresumeOpen(true)
@@ -34,6 +37,7 @@ const Desktop = () => {
   </div>
   <div
     className="desktop-icon"
+    onMouseDown={playClick}
     onDoubleClick={(e) => {
       e.stopPropagation()
       window.open("https://github.com/DEVSINGH2004", "_blank", "noopener,noreferrer")
@@ -44,6 +48,7 @@ const Desktop = () => {
   </div>
   <div
     className="desktop-icon"
+    onMouseDown={playClick}
     onDoubleClick={(e) => {
       e.stopPropagation()
       window.open("https://linkedin.com/in/contactdevsingh/", "_blank", "noopener,noreferrer")
@@ -54,6 +59,7 @@ const Desktop = () => {
   </div>
   <div
     className="desktop-icon"
+    onMouseDown={playClick}
     onDoubleClick={(e) => {
       e.stopPropagation()
       window.open("https://x.com/DevsinghEngg", "_blank", "noopener,noreferrer")

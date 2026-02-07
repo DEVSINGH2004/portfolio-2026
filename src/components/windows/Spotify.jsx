@@ -1,7 +1,7 @@
 import React from "react"
 import { Rnd } from "react-rnd"
 import "./Spotify.css"
-
+import { playClick } from '../../utils/sound'
 const Spotify = ({ onClose }) => {
   return (
     <Rnd
@@ -20,7 +20,7 @@ const Spotify = ({ onClose }) => {
         {/* Header (drag handle) */}
         <div className="spotify-header">
           <span>Spotify</span>
-          <button onClick={onClose}>✖</button>
+          <button onMouseDown={playClick} onClick={onClose}>✖</button>
         </div>
 
         {/* Content */}

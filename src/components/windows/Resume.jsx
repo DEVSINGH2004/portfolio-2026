@@ -1,6 +1,7 @@
 import React from "react"
 import { Rnd } from "react-rnd"
 import "./Resume.css"
+import { playClick } from '../../utils/sound'
 
 const Resume = ({ onClose }) => {
   return (
@@ -20,7 +21,7 @@ const Resume = ({ onClose }) => {
         {/* Header */}
         <div className="resume-header">
           <span>Resume.pdf</span>
-          <button onClick={onClose}>✖</button>
+          <button onMouseDown={playClick} onClick={onClose}>✖</button>
         </div>
 
         {/* PDF iframe */}
