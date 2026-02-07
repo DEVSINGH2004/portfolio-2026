@@ -15,6 +15,17 @@
   user-select: none;
 }
 
+.desktop-icon:hover {
+  background: rgba(49, 106, 197, 0.25); /* XP blue */
+  outline: 0.0625rem dotted #ffffff;
+}
+
+.desktop-icon:hover p {
+  background: #316ac5;
+  color: white;
+  padding: 0.0625rem 0.25rem;
+}
+
 .desktop-icon img {
   width: 3rem;    /* 48px */
   pointer-events: none;

@@ -52,6 +52,16 @@ const Desktop = () => {
     <img src="/icons/linkedin.png" alt="LinkedIn" />
     <p>LinkedIn</p>
   </div>
+  <div
+    className="desktop-icon"
+    onDoubleClick={(e) => {
+      e.stopPropagation()
+      window.open("https://x.com/DevsinghEngg", "_blank", "noopener,noreferrer")
+    }}
+  >
+    <img src="/icons/x.png" alt="Twitter" />
+    <p>Twitter</p>
+  </div>
 </div>
     {spotifyOpen && <Spotify onClose={() => setspotifyOpen(false)} />}
     {resumeOpen && <Resume onClose={() => setresumeOpen(false)} />}

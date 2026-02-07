@@ -1,0 +1,71 @@
+.xp-taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    #3a6ea5 0%,
+    #245edb 50%,
+    #1f3c88 100%
+  );
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* START BUTTON */
+.start-button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+  background: linear-gradient(
+    to bottom,
+    #5fa84f 0%,
+    #3c8f2e 50%,
+    #2e6f1e 100%
+  );
+  border-right: 0.125rem solid #1f3c88;
+  cursor: pointer;
+}
+
+.start-button img {
+  width: 1.25rem;
+  margin-right: 0.375rem;
+  pointer-events: none;
+}
+
+.start-button span {
+  color: white;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+/* CENTER AREA */
+.taskbar-center {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* SYSTEM TRAY */
+.taskbar-tray {
+  height: 100%;
+  padding: 0 0.75rem;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to bottom,
+    #4d8fdc 0%,
+    #3578c8 50%,
+    #245edb 100%
+  );
+}
+
+.clock {
+  color: white;
+  font-size: 0.75rem;
+}
